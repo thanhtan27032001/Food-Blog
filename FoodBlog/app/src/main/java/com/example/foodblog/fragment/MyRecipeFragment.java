@@ -96,6 +96,9 @@ public class MyRecipeFragment extends Fragment {
                     myRecipeAdapter = new MyRecipeAdapter(MyRecipeFragment.this, myRecipes);
                     rvMyRecipes.setAdapter(myRecipeAdapter);
                 }
+                else if (response.code() == 432){
+                    Toast.makeText(getContext(), R.string.error_recipe_432, Toast.LENGTH_SHORT).show();
+                }
                 else {
                     Toast.makeText(getContext(), R.string.error_500, Toast.LENGTH_SHORT).show();
                     try {

@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodblog.MyFormat;
@@ -50,6 +51,9 @@ public class RecipeFavoriteAdapter extends RecyclerView.Adapter<RecipeFavoriteAd
                 context.getText(R.string.recipe_get_date_hours_ago),
                 context.getText(R.string.recipe_get_date_yesterday)
         ));
+        holder.layoutRecipePreview.setOnClickListener(view -> {
+            context.viewRecipeDetail(recipe.getRecipeId());
+        });
         holder.btnUnlike.setOnClickListener(view -> {
             context.unlikeRecipe(recipe);
         });
@@ -61,11 +65,13 @@ public class RecipeFavoriteAdapter extends RecyclerView.Adapter<RecipeFavoriteAd
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
+        CardView layoutRecipePreview;
         ImageView imgRecipePreview, imgAvatar;
         TextView tvRecipeTitle, tvRecipeUserName, tvRecipeCreateDate;
         ImageButton btnUnlike;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+            layoutRecipePreview = itemView.findViewById(R.id.layoutRecipePreview);
             imgRecipePreview = itemView.findViewById(R.id.imgRecipePreview);
             imgAvatar = itemView.findViewById(R.id.imgAvatar);
             tvRecipeTitle = itemView.findViewById(R.id.tvRecipeTitle);

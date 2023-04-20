@@ -44,6 +44,11 @@ public class SearchHistories {
         saveHistories(context);
     }
 
+    public void clearHistory(Context context){
+        recipeIdHistories.clear();
+        saveHistories(context);
+    }
+
     private void loadHistories(Context context) {
         ObjectInputStream objectIn = null;
         this.recipeIdHistories = new ArrayList<>();

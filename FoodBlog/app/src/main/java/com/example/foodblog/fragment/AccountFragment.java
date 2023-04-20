@@ -2,6 +2,7 @@ package com.example.foodblog.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -20,11 +21,13 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.foodblog.ChangePasswordActivity;
+import com.example.foodblog.LoginActivity;
 import com.example.foodblog.MyAuthorization;
 import com.example.foodblog.R;
 import com.example.foodblog.UpdateUserActivity;
 import com.example.foodblog.UserWallActivity;
 import com.example.foodblog.api.ApiUrl;
+import com.example.foodblog.model.SearchHistories;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.squareup.picasso.Picasso;
@@ -135,7 +138,7 @@ public class AccountFragment extends Fragment {
                         startActivity(new Intent(getContext(), ChangePasswordActivity.class));
                         break;
                     case R.id.optionLogout:
-                        getActivity().finish();
+                        logout();
                         break;
                 }
                 return false;
@@ -144,6 +147,22 @@ public class AccountFragment extends Fragment {
 
         popupMenu.show();
     }
+
+    private void logout() {
+        // clear login info
+        PreferenceManager.getDefaultSharedPreferences(getContext())
+                .edit()
+                .remove(LoginActivity.TAG_REMEMBER)
+                .remove(LoginActivity.TAG_USERNAME)
+                .remove(LoginActivity.TAG_PASSWORD)
+                .apply();
+        // clear search histories
+        SearchHistories.getInstance(getContext()).clearHistory(getContext());
+        //
+        startActivity(new Intent(getContext(), LoginActivity.class));
+        getActivity().finish();
+    }
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

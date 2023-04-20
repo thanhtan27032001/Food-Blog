@@ -31,9 +31,9 @@ import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
     public static int REQUEST_REGISTER_CODE = 2703;
-    private static final String TAG_REMEMBER = "TAG_REMEMBER";
-    private static final String TAG_USERNAME = "TAG_USERNAME";
-    private static final String TAG_PASSWORD = "TAG_PASSWORD";
+    public static final String TAG_REMEMBER = "TAG_REMEMBER";
+    public static final String TAG_USERNAME = "TAG_USERNAME";
+    public static final String TAG_PASSWORD = "TAG_PASSWORD";
     private SharedPreferences sharedPreferences;
     private EditText edtUsername, edtPassword;
     private ImageView imgShowPassword;
@@ -69,10 +69,12 @@ public class LoginActivity extends AppCompatActivity {
             edtPassword.setSelection(selectionIndex);
         });
         btnLogin.setOnClickListener(view -> {
-            String username = edtUsername.getText().toString();
-            String password = edtPassword.getText().toString();
-            LoginInfo loginInfo = new LoginInfo(username, password);
-            login(loginInfo);
+            if (isValidated()){
+                String username = edtUsername.getText().toString();
+                String password = edtPassword.getText().toString();
+                LoginInfo loginInfo = new LoginInfo(username, password);
+                login(loginInfo);
+            }
         });
         btnRegister.setOnClickListener(view -> {
             startActivityForResult(new Intent(LoginActivity.this, RegisterActivity.class), REQUEST_REGISTER_CODE);
@@ -118,6 +120,20 @@ public class LoginActivity extends AppCompatActivity {
                 .apply();
     }
 
+    private boolean isValidated() {
+        if (edtUsername.getText().toString().equals("")){
+            edtUsername.setError(getText(R.string.error_miss_username));
+            edtUsername.requestFocus();
+            return false;
+        }
+        if (edtPassword.getText().toString().equals("")){
+            edtPassword.setError(getText(R.string.error_miss_password));
+            edtPassword.requestFocus();
+            return false;
+        }
+        return true;
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -152,6 +168,7 @@ public class LoginActivity extends AppCompatActivity {
                                 MyAuthorization.getInstance().setUsername(loginInfo.getAccountName());
                                 rememberLogin(loginInfo);
                                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                LoginActivity.this.finish();
                             }
                             else {
                                 Toast.makeText(LoginActivity.this, R.string.error_500, Toast.LENGTH_SHORT).show();
@@ -159,7 +176,7 @@ public class LoginActivity extends AppCompatActivity {
                                     Toast.makeText(LoginActivity.this, response.errorBody().string(), Toast.LENGTH_SHORT).show();
                                 }
                                 catch (Exception e){
-
+                                    e.printStackTrace();
                                 }
                             }
                         }

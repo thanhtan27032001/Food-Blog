@@ -1,5 +1,6 @@
 package com.example.foodblog.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.foodblog.MyAuthorization;
 import com.example.foodblog.R;
+import com.example.foodblog.RecipeDetailActivity;
 import com.example.foodblog.adapter_recycler_view.RecipeFavoriteAdapter;
 import com.example.foodblog.api_instance.RecipeApiInstance;
 import com.example.foodblog.model.Recipe;
@@ -131,5 +133,11 @@ public class MyFavoriteFragment extends Fragment {
                 t.printStackTrace();
             }
         });
+    }
+
+    public void viewRecipeDetail(int recipeId){
+        Intent intent = new Intent(getContext(), RecipeDetailActivity.class);
+        intent.putExtra(RecipeDetailActivity.TAG_RECIPE, recipeId);
+        startActivity(intent);
     }
 }
