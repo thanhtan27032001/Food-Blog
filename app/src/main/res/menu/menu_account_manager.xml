@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/optionViewMyWall"
+        android:title="@string/option_view_my_wall"/>
+
+    <item
+        android:id="@+id/optionUpdateUser"
+        android:title="@string/title_update_user_info"/>
+    <item
+        android:id="@+id/optionUpdatePassword"
+        android:title="@string/title_change_password"/>
+    <item
+        android:id="@+id/optionLogout"
+        android:title="@string/option_log_out"/>
+</menu>

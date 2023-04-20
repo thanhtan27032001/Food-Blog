@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/edtIngredient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:gravity="top"
+        android:hint="@string/example_ingredient"
+        android:background="@drawable/background_text_box_simple"
+        android:nextFocusDown="@id/edtIngredientAmount"/>
+    <TextView
+        android:id="@+id/edtIngredientAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="8dp"
+        android:hint="@string/example_ingredient_amount"
+        android:background="@drawable/background_text_box_simple"/>
+
+    <ImageButton
+        android:id="@+id/btnDeleteIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:src="@drawable/baseline_delete_outline_24"
+        android:background="@drawable/background_ripple_oval"/>
+</LinearLayout>

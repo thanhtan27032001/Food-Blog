@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Food blog</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Đăng nhập và đăng ký-->
+    <string name="sign_up_title">Đăng ký</string>
+    <string name="sign_up_subtitle">Tài khoản Food blog mới</string>
+    <string name="name_input_hint">Danh xưng</string>
+    <string name="email_input_hint">Email</string>
+    <string name="username_input_hint">Tài khoản</string>
+    <string name="password_input_hint">Mật khẩu</string>
+    <string name="confirm_password_hint">Xác nhận mật khẩu</string>
+    <string name="not_have_account">Chưa có tài khoản?</string>
+    <string name="already_have_account">Đã có tài khoản?</string>
+    <string name="confirm_password_input_hint">Mật khẩu xác nhận</string>
+    <string name="sign_up_button">Tạo tài khoản</string>
+    <string name="back_textview_signup">Quay về màn hình Đăng nhập</string>
+    <string name="login_title">Đăng nhập</string>
+    <string name="login_subtitle">Khám phá các công thức nấu ăn mới</string>
+    <string name="remember_checkbox_hint">Lưu đăng nhập</string>
+    <string name="error_miss_name">Vui lòng điền danh xưng</string>
+    <string name="error_miss_email">Vui lòng điền email</string>
+    <string name="error_miss_username">Vui lòng điền tài khoản</string>
+    <string name="error_miss_password">Vui lòng điền mật khẩu</string>
+    <string name="error_confirm_password_incorrect">Mật khẩu xác nhận không chính xác</string>
+    <string name="error_register_418">Vui lòng cung cấp đủ các thông tin</string>
+    <string name="error_register_419">Mật khẩu xác nhận không chính xác</string>
+    <string name="error_register_420">Mật khẩu phải có ít nhất 6 ký tự và phải bao gồm 1 ký tự thường, 1 ký tự in hoa, 1 ký tự số và 1 ký tự đặc biệt</string>
+    <string name="error_register_421">Email không hợp lệ</string>
+    <string name="error_register_422">Email đã tồn tại</string>
+    <string name="error_register_423">Đăng ký thành công</string>
+    <string name="error_login_424_425">Tài khoản hoặc Mật khẩu không chính xác</string>
+    <string name="success_register">Đăng ký tài khoản mới thành công</string>
+    <string name="error_email_existed">Email đã tồn tại</string>
+    <string name="noti_login">Đang đăng nhập…</string>
+
+    <!-- Main activity-->
+    <string name="title_close_app">Đóng ứng dụng</string>
+    <string name="message_close_app">Bạn có chắc chắn muốn đóng ứng dụng?</string>
+    <string name="option_home">Nhà</string>
+    <string name="option_search">Tìm kiếm</string>
+    <string name="option_recipe_manage">Quản lý công thức</string>
+    <string name="option_follow">Quản lý theo dõi</string>
+    <string name="option_account">Quản lý tài khoản</string>
+
+    <!-- Home-->
+    <string name="tab_title_ingredient_season">Các nguyên liệu đang trong mùa</string>
+    <string name="tab_title_recipe_following">Công thức mới từ người bạn theo dõi</string>
+    <string name="tab_title_recipe_popular">Công thức phổ biến tuần này</string>
+    <string name="tab_title_recipe_new">Công thức mới nhất</string>
+    <string name="error_load_recipe_ingredient_428">Không có công thức phù hợp cho nguyên liệu này :(</string>
+    <string name="error_get_new_recipe_429">Không có công thức mới</string>
+    <string name="error_get_popular_recipe_432">Không có công thức trong tuần này</string>
+    <string name="error_get_following_recipe_436">Không có công thức mới từ người bạn theo dõi</string>
+    <string name="error_get_season_ingredient_427">Không có nguyên liệu đang trong mùa</string>
+    <string name="success_like">Yêu thích công thức thành công</string>
+    <string name="success_unlike">Bỏ yêu thích công thức thành công</string>
+    <string name="error_recipe_432">Không tìm thấy công thức</string>
+    <string name="error_like_recipe_444">Bạn đã yêu thích công thức này, làm mới danh sách để kiểm tra</string>
+    <string name="error_unlike_recipe_445">Bạn đã bỏ yêu thích công thức này, làm mới danh sách để kiểm tra</string>
+    <string name="success_bookmark_recipe">Lưu công thức thành công</string>
+    <string name="error_bookmark_443">Bạn đã lưu công thức này</string>
+    <string name="success_unbookmark_recipe">Bỏ lưu công thức thành công</string>
+
+    <!-- Search   -->
+    <string name="title_search_bar">Tìm kiếm công thức</string>
+    <string name="tv_search_histories">Lịch sử tìm kiếm</string>
+
+    <!-- Recipe manager   -->
+    <string name="error_change_recipe_status_private">Công thức của bạn đã được đặt riêng tư</string>
+    <string name="error_change_recipe_status_public">Công thức của bạn đã được đặt công khai</string>
+    <string name="title_delete_recipe">Xóa công thức</string>
+    <string name="message_delete_recipe">Bạn có chắc chắn muốn xóa công thức</string>
+    <string name="error_miss_recipe_image">Vui lòng chọn ảnh cho công thức</string>
+    <string name="error_miss_recipe_name">Vui lòng nhập tên công thức</string>
+    <string name="error_miss_recipe_ingredient">Công thức cần ít nhất 1 nguyên liệu</string>
+    <string name="error_miss_recipe_step">Công thức cần ít nhất 1 bước thực hiện</string>
+    <string name="success_add_recipe">Tạo công thức thành công</string>
+    <string name="error_recipe_ingredient_invalid">Vui lòng chọn nguyên liệu trong danh sách</string>
+    <string name="error_miss_ingredient_amout">Vui lòng nhập số lượng cho nguyên liệu</string>
+    <string name="success_update_recipe">Cập nhật công thức thành công</string>
+    <string name="example_recipe_name">Cơm sườn</string>
+    <string name="example_recipe_description">Hãy chia sẻ với mọi người về món này của bạn nhé - ai đã truyền cảm hứng cho bạn, tại sao nó đặc biệt, bạn thích thưởng thức nó thế nào</string>
+    <string name="tv_recipe_amount">Khẩu phần:</string>
+    <string name="example_recipe_amount">2 người</string>
+    <string name="tv_recipe_prepare_time">Thời gian chuẩn bị:</string>
+    <string name="example_recipe_prepare_time">20 phút</string>
+    <string name="tv_recipe_cooking_time">Thời gian nấu:</string>
+    <string name="example_recipe_cooking_time">20 phút</string>
+    <string name="btn_add_ingredient">Thêm nguyên liệu</string>
+    <string name="btn_add_step">Thêm bước</string>
+    <string name="tv_edit_ingredient">Chỉnh sửa nguyên liệu</string>
+    <string name="example_ingredient_amount">2 quả</string>
+    <string name="title_edit_recipe">Chỉnh sửa công thức</string>
+    <string name="title_change_recipe_status">Đồi trạng thái công thức</string>
+    <string name="message_change_recipe_status">Bạn muốn công thức được…</string>
+    <string name="recipe_status_option_private">Riêng tư - Chỉ có bạn thấy được công thức này</string>
+    <string name="recipe_status_option_public">Công khai - Công thức được chia sẻ đến mọi người</string>
+    <string name="title_select_image">Chọn ảnh</string>
+    <string name="title_save_recipe">Tạo công thức</string>
+    <string name="title_recipe_manager">Công thức của tôi</string>
+    <string name="example_ingredient">Trứng gà</string>
+
+    <!-- Follow   -->
+    <string name="follow_tab_following">Đang theo dõi</string>
+    <string name="follow_tab_follower">Người theo dõi</string>
+    <string name="error_following_441">Bạn không theo dõi bất kì ai</string>
+    <string name="error_follower_442">Không ai theo dõi bạn</string>
+    <string name="success_follow">Theo dõi người dùng thành công</string>
+    <string name="success_unfollow">Bỏ theo dõi người dùng thành công</string>
+    <string name="error_unfollow_435">Bạn đã bỏ theo dõi người dùng này, làm mới danh sách để kiểm tra</string>
+    <string name="error_follow_446">Bạn đã theo dõi người dùng này, làm mới danh sách để kiểm tra</string>
+    <string name="btn_unfollow">Đang theo dõi</string>
+    <string name="btn_follow">Theo dõi</string>
+    <string name="tv_recipe">Công thức</string>
+    <string name="tv_search_user">Tìm kiếm người dùng</string>
+
+    <!-- Account   -->
+    <string name="account_tab_0">Thư viện</string>
+    <string name="account_tab_1">Yêu thích</string>
+    <string name="success_add_recipe_list">Tạo danh sách công thức thành công</string>
+    <string name="success_delete_recipe_list">Xóa danh sách công thức thành công</string>
+    <string name="error_delete_recipe_list_433">Không tìm thấy danh sách công thức</string>
+    <string name="error_miss_recipe_list_name">Vui lòng điền tên danh sách công thức</string>
+    <string name="error_miss_new_password">Vui lòng điền mật khẩu mới</string>
+    <string name="noti_sending_otp">Đang gửi OTP đến email của bạn</string>
+    <string name="otp_subject">Xác thực OTP cho tài khoản Food blog của bạn</string>
+    <string name="success_send_otp">Gửi OTP thành công</string>
+    <string name="error_miss_location">Vui lòng điền vị trí của bạn</string>
+    <string name="success_update_user">Cập nhật thông tin người dùng thành công</string>
+    <string name="title_change_password">Đổi mật khẩu</string>
+    <string name="hint_new_password">Mật khẩu mới</string>
+    <string name="title_update_user_info">Cập nhật thông tin</string>
+    <string name="tv_location">Vị trí</string>
+    <string name="tv_intro">Giới thiệu</string>
+    <string name="title_add_recipe_list">Danh sách công thức mới</string>
+    <string name="hint_recipe_list_name">Tên danh sách công thức</string>
+    <string name="title_bookmark">Lưu công thức vào:</string>
+    <string name="title_change_recipe_list_name">Đổi tên danh sách công thức</string>
+    <string name="title_otp">Xác thực OTP</string>
+    <string name="message_otp">Gửi OTP đến email đăng ký của bạn.</string>
+    <string name="btn_send_otp">GỬI OTP</string>
+    <string name="tv_created_recipe_list">Danh sách công thức đã tạo</string>
+    <string name="option_view_my_wall">Xem tường của tôi</string>
+    <string name="option_update_information">Cập nhật thông tin</string>
+    <string name="option_log_out">Đăng xuất</string>
+    <string name="option_delete_recipe_list">Xóa danh sách công thức</string>
+    <string name="tv_otp_available">Mã OTP còn hiệu lực trong</string>
+
+    <!-- Recipe detail   -->
+    <string name="no_description">Không có mô tả</string>
+    <string name="tv_expand">Xem thêm</string>
+    <string name="tv_collapse">Xem ít hơn</string>
+    <string name="tv_amount">Khẩu phần</string>
+    <string name="tv_prepare_time">Chuẩn bị</string>
+    <string name="tv_cooking_time">Thực hiện</string>
+    <string name="tv_ingredient">Nguyên liệu</string>
+    <string name="tv_cooking_step">Thực hiện</string>
+    <string name="step">Bước</string>
+    <string name="btn_write_comment">Viết bình luận</string>
+    <string name="tv_all_reaction">Tất cả tương tác</string>
+    <string name="edt_comment_hint">Cảm nghĩ của bạn về công thức này</string>
+    <string name="btn_comment_cancel">Hủy</string>
+    <string name="btn_comment_submit">Đăng</string>
+    <string name="error_get_recipe_by_id_432">Không tìm thấy công thức</string>
+    <string name="error_get_comment_of_recipe_438">Công thức này không có bình luận</string>
+    <string name="success_add_comment">Thêm bình luận thành công</string>
+    <string name="error_add_comment_437">Người dùng chỉ được bình luận mỗi công thức 1 lần</string>
+    <string name="success_edit_comment">Chỉnh sửa công thức thành công</string>
+    <string name="error_edit_comment_434">Không tìm thấy công thức</string>
+    <string name="title_delete_comment">Xóa bình luận</string>
+    <string name="message_delete_comment">Bạn có chắc chắn muốn xóa bình luận này?</string>
+    <string name="success_delete_comment">Xóa bình luận thành công</string>
+    <string name="error_delete_comment_434">Không tìm thấy bình luận</string>
+    <string name="tv_your_comment">Bình luận của bạn</string>
+    <string name="option_edit_comment">Chỉnh sửa bình luận</string>
+
+    <!-- Chung-->
+    <string name="error_500">Kết nối thất bại, vui lòng kiểm tra kết nối internet của bạn</string>
+    <string name="recipe_get_date_minute_ago">phút trước</string>
+    <string name="recipe_get_date_minutes_ago">phút trước</string>
+    <string name="recipe_get_date_hour_ago">giờ trước</string>
+    <string name="recipe_get_date_hours_ago">giờ trước</string>
+    <string name="recipe_get_date_yesterday">Hôm qua</string>
+    <string name="unit_amount">người</string>
+    <string name="unit_minute">phút</string>
+    <string name="unit_minutes">phút</string>
+    <string name="unit_seconds">giây</string>
+    <string name="error_file_not_found">Không tìm thấy file</string>
+    <string name="error_missing_field">Thiếu trường thông tin</string>
+    <string name="warning_grant_permission_access_storage">Bạn cần cho phép Food blog truy cập bộ nhớ để chọn hình ảnh</string>
+    <string name="warning_grant_permission_camera">Bạn cần cho phép Food blog sử dụng camera để chụp ảnh mới</string>
+    <string name="btn_ok">Đồng ý</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="btn_submit">Xác nhận</string>
+</resources>

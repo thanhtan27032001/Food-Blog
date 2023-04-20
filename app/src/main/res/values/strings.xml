@@ -1,0 +1,207 @@
+<resources>
+    <string name="app_name">Food blog</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Đăng nhập và đăng ký-->
+    <string name="sign_up_title">Sign up</string>
+    <string name="sign_up_subtitle">New food blog account</string>
+    <string name="name_input_hint">Nickname</string>
+    <string name="email_input_hint">Email</string>
+    <string name="birthdate_input_hint">01/01/2001</string>
+    <string name="username_input_hint">Username</string>
+    <string name="password_input_hint">Password</string>
+    <string name="confirm_password_hint">Confirm password</string>
+    <string name="not_have_account">Not have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="confirm_password_input_hint">Confirm password</string>
+    <string name="sign_up_button">Create account</string>
+    <string name="back_textview_signup">Go back to Login screen</string>
+    <string name="login_title">Login</string>
+    <string name="login_subtitle">To explore new food recipes</string>
+    <string name="remember_checkbox_hint">Remember me</string>
+    <string name="error_miss_name">Please enter your name</string>
+    <string name="error_miss_email">Please enter your email</string>
+    <string name="error_miss_username">Please enter username</string>
+    <string name="error_miss_password">Please enter password</string>
+    <string name="error_confirm_password_incorrect">Confirm password incorrect</string>
+    <string name="error_register_418">Please provide all required fields</string>
+    <string name="error_register_419">Confirm password incorrect</string>
+    <string name="error_register_420">Password must be at least 6 characters long and contain a lowercase letter, an uppercase letter, a numeric digital and a special character</string>
+    <string name="error_register_421">Email address has invalid  format</string>
+    <string name="error_register_422">Email already exists</string>
+    <string name="error_register_423">Successful register</string>
+    <string name="error_login_424_425">Username or Password incorrect</string>
+    <string name="success_register">Register new account successful</string>
+    <string name="error_email_existed">Email already existed</string>
+    <string name="noti_login">Logging in…</string>
+    <string name="tv_forgot_password">Forgot password</string>
+    <string name="error_miss_username_forgot_password">Please enter username account need to change password</string>
+    <string name="tv_birthdate">Birthdate</string>
+    <string name="error_birthdate_wrong_format">Birthdate invalid, the format must be DD/MM/YYYY</string>
+
+    <!-- Main activity-->
+    <string name="title_close_app">Close app</string>
+    <string name="message_close_app">Are you sure to close app?</string>
+    <string name="option_home">Home</string>
+    <string name="option_search">Search</string>
+    <string name="option_recipe_manage">Recipe manager</string>
+    <string name="option_follow">Follow manager</string>
+    <string name="option_account">Account manager</string>
+
+    <!-- Home-->
+    <string name="tab_title_ingredient_season">Ingredients are in season</string>
+    <string name="tab_title_recipe_following">New recipes from user you follow</string>
+    <string name="tab_title_recipe_popular">Popular recipes of week</string>
+    <string name="tab_title_recipe_new">Latest public recipes</string>
+    <string name="error_load_recipe_ingredient_428">There is no recipe with this ingredient</string>
+    <string name="error_get_new_recipe_429">There is no new recipe</string>
+    <string name="error_get_popular_recipe_432">There is no recipe in this week</string>
+    <string name="error_get_following_recipe_436">There is no new recipe from following</string>
+    <string name="error_get_season_ingredient_427">There is no ingredient in this season</string>
+    <string name="success_like">Like recipe successful</string>
+    <string name="success_unlike">Unlike recipe successful</string>
+    <string name="error_recipe_432">Recipe not found</string>
+    <string name="error_like_recipe_444">You have already like this recipe, refresh to recheck</string>
+    <string name="error_unlike_recipe_445">You have already unlike this recipe, refresh to recheck</string>
+    <string name="success_bookmark_recipe">Bookmark recipe successful</string>
+    <string name="error_bookmark_443">You have already bookmark this recipe to recipe list</string>
+    <string name="success_unbookmark_recipe">Remove bookmark recipe successful</string>
+
+    <!-- Search   -->
+    <string name="title_search_bar">Look for recipe</string>
+    <string name="tv_search_histories">Search histories</string>
+
+    <!-- Recipe manager   -->
+    <string name="error_change_recipe_status_private">Your recipe have already been private</string>
+    <string name="error_change_recipe_status_public">Your recipe have already been public</string>
+    <string name="title_delete_recipe">Delete recipe</string>
+    <string name="message_delete_recipe">Are you sure to delete recipe</string>
+    <string name="error_miss_recipe_image">Please choose recipe image</string>
+    <string name="error_miss_recipe_name">Please enter recipe name</string>
+    <string name="error_miss_recipe_ingredient">Recipe need at least 1 ingredient</string>
+    <string name="error_miss_recipe_step">Recipe need at least 1 step</string>
+    <string name="success_add_recipe">Add recipe successful</string>
+    <string name="error_recipe_ingredient_invalid">Please choose ingredient in search list</string>
+    <string name="error_miss_ingredient_amout">Please enter ingredient amount</string>
+    <string name="success_update_recipe">Update recipe successful</string>
+    <string name="example_recipe_name">Beefsteak</string>
+    <string name="example_recipe_description">Tell everyone about yours - who inspired you, why it is special, how you enjoy it</string>
+    <string name="tv_recipe_amount">Amount:</string>
+    <string name="example_recipe_amount">2 people</string>
+    <string name="tv_recipe_prepare_time">Preparing time:</string>
+    <string name="example_recipe_prepare_time">20 minutes</string>
+    <string name="tv_recipe_cooking_time">Cooking time:</string>
+    <string name="example_recipe_cooking_time">20 minutes</string>
+    <string name="btn_add_ingredient">Add ingredient</string>
+    <string name="btn_add_step">Add step</string>
+    <string name="tv_edit_ingredient">Edit ingredient</string>
+    <string name="example_ingredient_amount">2</string>
+    <string name="title_edit_recipe">Edit recipe</string>
+    <string name="title_change_recipe_status">Change recipe status</string>
+    <string name="message_change_recipe_status">You want your new recipe in…</string>
+    <string name="recipe_status_option_private">Private - Only you can see this recipe</string>
+    <string name="recipe_status_option_public">Public - Share your recipe to everyone</string>
+    <string name="title_select_image">Select image</string>
+    <string name="title_save_recipe">Create recipe</string>
+    <string name="title_recipe_manager">Manage my recipe</string>
+    <string name="example_ingredient">Egg</string>
+
+    <!-- Follow   -->
+    <string name="follow_tab_following">Following</string>
+    <string name="follow_tab_follower">Follower</string>
+    <string name="error_following_441">You do not follow anyone</string>
+    <string name="error_follower_442">There is no one follow you</string>
+    <string name="success_follow">Follow user successful</string>
+    <string name="success_unfollow">Unfollow user successful</string>
+    <string name="error_unfollow_435">You have already unfollow this user, refresh to recheck</string>
+    <string name="error_follow_446">You have already follow this user, refresh to recheck</string>
+    <string name="btn_unfollow">Following</string>
+    <string name="btn_follow">Follow</string>
+    <string name="tv_recipe">Recipe</string>
+    <string name="tv_search_user">Search user</string>
+
+    <!-- Account   -->
+    <string name="account_tab_0">Library</string>
+    <string name="account_tab_1">Favorite</string>
+    <string name="success_add_recipe_list">Create recipe list successful</string>
+    <string name="success_delete_recipe_list">Delete recipe list successful</string>
+    <string name="error_delete_recipe_list_433">Cannot file recipe list</string>
+    <string name="error_miss_recipe_list_name">Please fill new recipe list name</string>
+    <string name="error_miss_new_password">Please enter new password</string>
+    <string name="noti_sending_otp">Sending OTP to your email</string>
+    <string name="otp_subject">OTP for your Food blog account</string>
+    <string name="success_send_otp">Send OTP successful</string>
+    <string name="error_miss_location">Please enter your location</string>
+    <string name="success_update_user">Update user information successful</string>
+    <string name="title_change_password">Change password</string>
+    <string name="hint_new_password">New password</string>
+    <string name="title_update_user_info">Update information</string>
+    <string name="tv_location">Location</string>
+    <string name="tv_intro">Introduce</string>
+    <string name="title_add_recipe_list">New recipe list</string>
+    <string name="hint_recipe_list_name">Recipe list name</string>
+    <string name="title_bookmark">Bookmark recipe to:</string>
+    <string name="title_change_recipe_list_name">Change recipe list name</string>
+    <string name="title_otp">Verify OTP</string>
+    <string name="message_otp">Send OTP to your register email.</string>
+    <string name="btn_send_otp">SEND OTP</string>
+    <string name="tv_created_recipe_list">Created recipe list</string>
+    <string name="option_view_my_wall">View my wall</string>
+    <string name="option_update_information">Update information</string>
+    <string name="option_log_out">Log out</string>
+    <string name="option_delete_recipe_list">Delete recipe list</string>
+    <string name="tv_otp_available">Your OTP is available in</string>
+    <string name="warning_otp_available">Current OTP is available, cannot send more OTP</string>
+    <string name="success_change_password">Change password successful</string>
+    <string name="error_otp_424">Username not found</string>
+    <string name="error_otp_449">OTP is invalid</string>
+    <string name="error_otp_450">OTP is incorrect</string>
+    <string name="error_otp_451">Your OTP is timeout, please resend</string>
+    <string name="error_otp_invalid">Your input OTP is invalid</string>
+
+    <!-- Recipe detail   -->
+    <string name="no_description">There is no description</string>
+    <string name="tv_expand">See more</string>
+    <string name="tv_collapse">See less</string>
+    <string name="tv_amount">Amount</string>
+    <string name="tv_prepare_time">Preparing</string>
+    <string name="tv_cooking_time">Cooking</string>
+    <string name="tv_ingredient">Ingredients</string>
+    <string name="tv_cooking_step">Cooking steps</string>
+    <string name="step">Step</string>
+    <string name="btn_write_comment">Write comment</string>
+    <string name="tv_all_reaction">All reactions</string>
+    <string name="edt_comment_hint">Tell author what you think about this recipe</string>
+    <string name="btn_comment_cancel">Cancel</string>
+    <string name="btn_comment_submit">Submit</string>
+    <string name="error_get_recipe_by_id_432">Recipe not found</string>
+    <string name="error_get_comment_of_recipe_438">This recipe has no comment</string>
+    <string name="success_add_comment">Add comment successful</string>
+    <string name="error_add_comment_437">User can only add one comment per recipe</string>
+    <string name="success_edit_comment">Edit comment successful</string>
+    <string name="error_edit_comment_434">Comment not found</string>
+    <string name="title_delete_comment">Delete comment</string>
+    <string name="message_delete_comment">Are you sure to delete your comment?</string>
+    <string name="success_delete_comment">Delete comment successful</string>
+    <string name="error_delete_comment_434">Comment not found</string>
+    <string name="tv_your_comment">Your comment</string>
+    <string name="option_edit_comment">Edit comment</string>
+
+    <!-- Chung-->
+    <string name="error_500">Connect fail, please check your internet</string>
+    <string name="recipe_get_date_minute_ago">minute ago</string>
+    <string name="recipe_get_date_minutes_ago">minutes ago</string>
+    <string name="recipe_get_date_hour_ago">hour ago</string>
+    <string name="recipe_get_date_hours_ago">hours ago</string>
+    <string name="recipe_get_date_yesterday">Yesterday</string>
+    <string name="unit_amount">people</string>
+    <string name="unit_minute">minute</string>
+    <string name="unit_minutes">minutes</string>
+    <string name="unit_seconds">seconds</string>
+    <string name="error_file_not_found">File not found</string>
+    <string name="error_missing_field">Missing field</string>
+    <string name="warning_grant_permission_access_storage">You need allow Food blog access storage to select picture</string>
+    <string name="warning_grant_permission_camera">You need allow Food blog access camera to take new picture</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_submit">Submit</string>
+</resources>

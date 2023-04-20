@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/title_add_recipe_list"/>
+
+    <EditText
+        android:id="@+id/edtRecipeListName"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:hint="@string/hint_recipe_list_name"/>
+
+    <ImageView
+        android:id="@+id/imgChooseImage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_search_image"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_submit"/>
+
+    </LinearLayout>
+</LinearLayout>

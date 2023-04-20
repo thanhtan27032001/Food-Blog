@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/option_home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/search"
+        android:title="@string/option_search"
+        android:icon="@drawable/ic_search"/>
+    <item
+        android:id="@+id/manage"
+        android:title="@string/option_recipe_manage"
+        android:icon="@drawable/ic_turkey"/>
+    <item
+        android:id="@+id/favorite"
+        android:title="@string/option_follow"
+        android:icon="@drawable/ic_follow"/>
+    <item
+        android:id="@+id/account"
+        android:title="@string/option_account"
+        android:icon="@drawable/ic_user"/>
+</menu>

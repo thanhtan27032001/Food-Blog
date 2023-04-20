@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/optionUpdateRecipe"
+        android:title="@string/title_edit_recipe"/>
+    <item
+        android:id="@+id/optionUpdateRecipeStatus"
+        android:title="@string/title_change_recipe_status"/>
+    <item
+        android:id="@+id/optionDeleteRecipe"
+        android:title="@string/title_delete_recipe"/>
+</menu>

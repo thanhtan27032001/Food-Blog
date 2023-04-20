@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swfFavRecipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MyFavoriteFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMyFavRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="100dp"
+        android:clipToPadding="false"/>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
