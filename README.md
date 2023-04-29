@@ -3,7 +3,7 @@
 <br/>
 Food blog là ứng dụng native Android có các chức năng như một ứng dụng mạng xã hội đơn giản mà ở đó người dùng có thể chia sẻ công thức nấu ăn của mình đến mọi người.
 <br/>
-<a href="https://www.youtube.com/watch?v=Q1G2AVUeaE4&list=PLYbxHMjPMXcxvAE8eqonfnZatxyV1f6la&index=1" target="blank">Video demo<a/>
+<a href="https://www.youtube.com/watch?v=Q1G2AVUeaE4&list=PLYbxHMjPMXcxvAE8eqonfnZatxyV1f6la&index=1" target="_blank">Video demo<a/>
 <br/>
 <b>Công nghệ sử dụng</b>
 <br/>
