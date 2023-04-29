@@ -1,15 +1,17 @@
 # Food-Blog
 <b>Giới thiệu</b>
-</br>
+<br/>
 Food blog là ứng dụng native Android có các chức năng như một ứng dụng mạng xã hội đơn giản mà ở đó người dùng có thể chia sẻ công thức nấu ăn của mình đến mọi người.
-</br>
+<br/>
+<a href="https://www.youtube.com/watch?v=Q1G2AVUeaE4&list=PLYbxHMjPMXcxvAE8eqonfnZatxyV1f6la&index=1" target="blank">Video demo<a/>
+<br/>
 <b>Công nghệ sử dụng</b>
-</br>
+<br/>
 - Android Java
 - Retrofit2 và Gson
 
 <b>Các chức năng</b>
-</br>
+<br/>
 - Gợi ý công thức:
   + Gợi ý công thức dựa theo nguyên liệu đang trong mùa
   + Gợi ý công thức phổ biến trong tuần
