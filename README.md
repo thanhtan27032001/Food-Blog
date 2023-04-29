@@ -5,7 +5,7 @@ Food blog là ứng dụng native Android có các chức năng như một ứng
 </br>
 <b>Công nghệ sử dụng</b>
 </br>
-- Android Java XML
+- Android Java
 - Retrofit2 và Gson
 
 <b>Các chức năng</b>
