@@ -4,7 +4,9 @@ import static androidx.core.content.PermissionChecker.checkSelfPermission;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.pm.PackageManager;
 
+import androidx.core.content.ContextCompat;
 import androidx.core.content.PermissionChecker;
 
 public class MyPermission {
@@ -17,5 +19,9 @@ public class MyPermission {
 
     public static boolean checkCameraPermission(Activity context){
         return checkSelfPermission(context, Manifest.permission.CAMERA) == PermissionChecker.PERMISSION_GRANTED;
+    }
+
+    public static boolean checkFineLocationPermission(Activity context){
+        return checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PermissionChecker.PERMISSION_GRANTED;
     }
 }

@@ -204,4 +204,11 @@
     <string name="btn_ok">OK</string>
     <string name="btn_cancel">Cancel</string>
     <string name="btn_submit">Submit</string>
+    <string name="title_user_location_shared">User location shared</string>
+    <string name="switch_share_my_location">Share my location</string>
+    <string name="title_other_user_location">Other users\'s locations</string>
+    <string name="success_share_my_location">Share my loaction successful</string>
+    <string name="tv_location_last_update">Updated at</string>
+    <string name="noti_sharing_location">Sharing my location</string>
+    <string name="success_stop_share_my_location">Stop sharing my location successful</string>
 </resources>

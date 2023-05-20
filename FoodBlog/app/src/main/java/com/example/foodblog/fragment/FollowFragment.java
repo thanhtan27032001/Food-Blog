@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.foodblog.LocationActivity;
 import com.example.foodblog.MyAuthorization;
 import com.example.foodblog.R;
 import com.example.foodblog.UserWallActivity;
@@ -68,6 +70,7 @@ public class FollowFragment extends Fragment {
     }
 
     FollowingFragment followingFragment;
+    ImageView imgViewLocationAllUsers;
     TabLayout tabLayout;
     ViewPager2 viewPager2;
     TabLayoutMediator tabLayoutMediator;
@@ -95,6 +98,8 @@ public class FollowFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View contentView = inflater.inflate(R.layout.fragment_follow, container, false);
+
+        imgViewLocationAllUsers = contentView.findViewById(R.id.imgViewLocationAllUsers);
 
         pagerAdapter = new ScreenSlidePagerAdapter(getActivity());
         viewPager2 = contentView.findViewById(R.id.pagerContent);
@@ -129,6 +134,9 @@ public class FollowFragment extends Fragment {
     }
 
     private void setEvent() {
+        imgViewLocationAllUsers.setOnClickListener(view -> {
+            startActivity(new Intent(getContext(), LocationActivity.class));
+        });
         tvSearchBar.setOnClickListener(view -> {
             layoutMain.setVisibility(View.GONE);
             layoutSearch.setVisibility(View.VISIBLE);

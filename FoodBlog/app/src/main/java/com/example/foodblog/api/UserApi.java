@@ -1,14 +1,18 @@
 package com.example.foodblog.api;
 
+import com.example.foodblog.model.ResponseAllUserLocation;
 import com.example.foodblog.model.ResponseObject;
 import com.example.foodblog.model.ResponseRecipes;
 import com.example.foodblog.model.ResponseUser;
+import com.example.foodblog.model.ResponseUserLocation;
 import com.example.foodblog.model.ResponseUsers;
 import com.example.foodblog.model.ResponseUsersSearch;
+import com.example.foodblog.model.UserLocation;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
@@ -54,4 +58,19 @@ public interface UserApi {
             @Part("email") RequestBody email,
             @Part("introduce") RequestBody intro,
             @Part MultipartBody.Part imgAvatar);
+
+    @GET("/api/v1/user/getCurrentLocationAllUser")
+    Call<ResponseAllUserLocation> getAllUserLocations(@Header("Authorization") String token);
+
+    @GET("/api/v1/user/getCurrentLocation")
+    Call<ResponseUserLocation> getMyLocation(@Header("Authorization") String token);
+
+    @PUT("/api/v1/user/updateCurrentLocation")
+    Call<ResponseObject> updateMyCurrentLocation(
+            @Header("Authorization") String token,
+            @Body UserLocation userLocation
+    );
+
+    @DELETE("/api/v1/user/deleteCurrentLocation")
+    Call<ResponseObject> deleteMyLocation(@Header("Authorization") String token);
 }
