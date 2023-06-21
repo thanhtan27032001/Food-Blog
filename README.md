@@ -17,7 +17,7 @@ Food blog là ứng dụng native Android có các chức năng như một ứng
   + Gợi ý công thức phổ biến trong tuần
   + Gợi ý công thức mới từ người mà người dùng đang theo dõi
   + Gợi ý công thức mới nhất từ mọi người
-- Hiển thị thông tin đầy đủ của công thức bao gồm tên công thức, mô tả, nguyên liệu, các bước thực hiện, nhận xét từ mọi người
+- Hiển thị thông tin đầy đủ của công thức bao gồm video hướng dẫn, tên công thức, mô tả, nguyên liệu, các bước thực hiện, nhận xét từ mọi người
 - Thêm, xóa, sửa nhận xét công thức
 - Yêu thích hoặc lưu công thức để dễ dàng xem lại
 - Tìm kiếm công thức, lưu và xem lại công thức đã tìm
@@ -25,9 +25,10 @@ Food blog là ứng dụng native Android có các chức năng như một ứng
   + Thêm, xóa, sửa công thức
   + Chuyển trạng thái công khai/riêng tư của công thức
 - Quản lý theo dõi:
-  + Tìm kiếm người dùng
+  + Tìm kiếm người dùng bằng tên/email
   + Theo dõi/Bỏ theo dõi người dùng khác
   + Hiển thị người dùng đang theo dõi và được theo dõi
+  + Chia sẻ sẽ vị trí cùng nhau nấu nướng
 - Xem tường người dùng khác:
   + Xem thông tin người dùng: tên, số công thức đã đăng, số lượt theo dõi
   + Xem các công thức công khai mà người dùng đã đăng
